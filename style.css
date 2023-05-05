@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.herosection .container {
+  background: linear-gradient(to bottom, rgb(156, 13, 89), transparent), 
+  url("flower.avif") no-repeat center/cover;
+  /*background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(to right #064acb, #366ed8, red);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 240px;
+  text-align: center;
+  color: white;
+  font-size: larger;
+}
+
+.navitems {
+    display: flex;
+    gap: 36px;
+}
+
+html {
+    font-size: 16px;
+    --primary-color: blueviolet
+}
+
+h1 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+}
+
+.navbar>.container {
+    padding: 18px 0;
+    border-bottom: 1px solid grey;
+}
+
+.navitems li {
+    list-style: none;
+}
+
+.navitems li a {
+    color: black
+}
+
+.navlink:hover {
+    color: red
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 8px 12px;
+    background-color: #60a5fa;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 6px;
+}
+
+.btn:hover {
+    background-color: lightblue;
+    color: red;
+    box-shadow: 2px 2px 3px #ccc;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+    font-family: system-ui, sans-serif;
+    background-color: peachpuff;
+}
+
+.popular {
+    margin-top: 24px;
+    flex-direction: column;
+}
+
+.popular .title {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+.popular .cardcontainer {
+    margin-left: 24px;
+     display: flex;
+    gap: 60px;
+}
+
+.card {
+  width: 320px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 1px 2px 3px grey;
+
+  background-color: azure;
+}
+
+.card img {
+  height: 400px;
+  width: 100%;
+}
+
+.card .card-body {
+  margin-top: 24px;
+  padding: 0 16px;
+}
+
+.card .card-footer {
+  padding: 24px 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer.container {
+  font-size: 0.8rem;
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+  border-top: rgb(10, 5, 5);
+}
+
+footer ul {
+  display: flex;
+  gap: 36px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+@media (width≥640px) {
+  html {
+    font-size: 20px;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero-section .container {
+    height: 320px;
+  }
+  .nav-items {
+    display: flex;
+  }
+}
+
+@media (width≥768px){
+  .card {
+    width: 300px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.dark {
+  background-color: #333333;
+  color:rgb(73, 64, 154);
+  }
+  .card {
+    color: rgb(112, 21, 21);
+  }
+}
